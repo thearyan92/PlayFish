@@ -1,0 +1,212 @@
+<html>
+
+<head>
+    <title>PlayFish</title>
+    <link rel="stylesheet" href="./video_streaming_website.css" />
+    <link rel="stylesheet" href="./contact.css" />
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> 
+</head>
+
+<body onload="AddCarouselButtons(); CheckSizeAttributes(); AddCards(); MakeJumbotron(); CheckCards(); ResizeHeader();"
+    onscroll="ScrollFunction();" onresize="CheckSizeAttributes(); CheckCards(); MakeJumbotron(); ResizeHeader();">
+    <div class="content">
+        <div class="header">
+            <div class="brand">
+                <h1 class="red">PLAY</h1>
+                <h1 class="white">FISH</h1>
+            </div>
+            <div class="right-nav">
+                <a href="./index.html" class="button-container">
+                    <h2>Home</h2>
+                </a>
+                <a href="#movies" onclick="SmoothScroll('movies');" class="button-container">
+                    <h2>Movies</h2>
+                </a>
+                <a href="./aboutus.html" onclick="SmoothScroll('trending');" class="button-container">
+                    <h2>About Us</h2>
+                </a>
+                <a href="#contact" onclick="SmoothScroll('releases');" class="button-container">
+                    <h2>Contact Us</h2>
+                </a>
+                <a href="#search" onclick="SmoothScroll('search');" class="button-container">
+                    <h2>Search</h2>
+                </a>
+
+                <!-- <form style="margin-top: 20px;">
+                    <input id="search-text" style="height: 2.2em; border-radius: 10px;" placeholder="search..." type="text" />
+                    <i id="search-btn" style="font-size: 2em;" class="fa-solid fa-magnifying-glass"></i>
+                </form> -->
+            </div>
+            <!-- <div class="right-nav">
+                <div class="button-container login">
+                    <a href="./login.html"> <h2>Log In</h2></a>
+                </div>
+            </div> -->
+        </div>
+
+
+        <div class="mid">
+            <div class="content-area" id="trending">
+                <h2 class="black">TRENDING</h2>
+                <div class="card-carousel">
+                </div>
+            </div>
+            <div class="content-area" id="releases">
+                <h2 class="content-title">NEW RELEASES</h2>
+                <div class="card-carousel">
+                    <div class="carousel-item">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/PmqsMXVSC6U?si=YheGqUCYbsr1VWPd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="carousel-item">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/0gk5uSpC2_g?si=tol_SIP1CHwHxSTv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/izXUSd2GsGo?si=gf3mgLyVI0kJtJ2_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="content-area" id="movies">
+                <h2 class="content-title">MOVIES</h2>
+                <div class="card-carousel">
+
+                    <div class="carousel-item">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jWldQyMeolI?si=D6-5biSzOeRpR7mz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="carousel-item">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/svJaA8NhjCg?si=Yc0oBxAKFBdeMZZ6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="carousel-item">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/MrtExmicVko?si=z2lje0iZWve-rjwp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="content-area">
+                <h2 class="content-title">DRAMA</h2>
+                <div class="card-carousel">
+                <div class="card-carousel">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/H00qzzuPKX8?si=SaQ_GCX1LLt7mG69" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="card-carousel">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/htwtV6qsSVo?si=L65kzKeKnAwHART9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="card-carousel">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hJWcczm7MCE?si=Isy6U3fLPOruIRq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                </div>
+            </div>
+            <div class="content-area">
+                <h2 class="content-title">THRILLER</h2>
+                <div class="card-carousel">
+                    <div class="carousel-item">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/MrtExmicVko?si=z2lje0iZWve-rjwp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="carousel-item">
+                     <iframe width="560" height="315" src="https://www.youtube.com/embed/CB2cnWIDxjk?si=ZD_1fJcBAJ7uCIeV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="carousel-item">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/xmnmeyAH4uo?si=AihIeOo-ksJgECFG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!-- Search Area -->
+            <div class="search-area" id="search">
+                <div class="search-area-content">
+                    <h2>Can't Find Anything You Like?</h2>
+                    <p>Explore our collection for thousands of unique movies.</p>
+                    <!-- <div class="input-area"> -->
+                        <form style="margin-top: 20px; display: flex;">
+                            <input id="search-text" style="height: 2.2em; border-radius: 10px;" placeholder="Search..." type="text" />
+                            <i id="search-btn" style="font-size: 2em;" class="fa-solid fa-magnifying-glass"></i>
+                            </form>
+                         <svg fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg> 
+                    </div>
+                </div>
+
+                <div id="my-div" style="display: flex; justify-content: center; flex-wrap: wrap;" class="container"></div>
+            </div>
+            <!-- Search Area End -->
+        </div>
+       
+        <!-- Contact Us -->
+        <div class="main-section contact bg-lightgrey" id="contact">
+            <div class="container">
+              <h2 class="heading-text">Get In Touch</h2>
+              <div class="width-100">
+              <form method="post" action="https://script.google.com/macros/s/AKfycbxtdMtvHsZUSxOP38mQBtQ8jt1mGLl85pkiGDQztfPD0DD2ZG7kLeEEo_fqCCB5kxSg/exec" name="contact-form">
+                <input type="text" name="your-name" placeholder="Full Name...">
+                <input type="text" name="your-email" placeholder="Full Email Id...">
+                <input type="text" name="your-number"placeholder="Full Mobile No...">
+                <textarea name="message" rows="7" placeholder="Enter Message..."></textarea>
+                <button type="submit" value="Submit" id="submit"><a href= "">Send Message</a></button>
+              </form>
+            </div>
+             
+            </div>
+          </div>
+          <!-- End Contact Us -->
+
+        <footer>
+            <div class="footer-content" style="padding: 1em;">
+                <div class="width-33">
+                    <h3>
+                      <i class="fa fa-map-marker"></i>
+                    </h3>
+            
+                    <p>Chitkara University, Himachal Pradesh</p>
+                  </div>
+                  <div class="width-33">
+                    <h3>
+                      <i class="fa fa-phone"></i>
+                    </h3>
+                    
+                    <p>+91 93176 00269</p>
+                  </div>
+                  <div class="width-33">
+                    <h3>
+                      <i class="fa fa-envelope-o"></i>
+                    </h3>
+                  
+                    <p><a href="mailto:thearyan92@gmail.com">thearyan92@gmail.com</a></p>
+                  </div>
+                  
+                  
+                <p> Copyright &copy; 2024 PlayFish</p>
+
+                
+                <ul class="footer-links">
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="./privacy.html">Privacy Policy</a></li>
+                    <li><a href="./terms_of_use.html">Terms of Use</a></li>
+                </ul>
+
+                <div style="padding: 1em;">
+                <ul class="social-icons">
+                    <li><a href="https://www.instagram.com/aryan_sharma0312" class="fa fa-instagram"></a></li>
+                    <li><a href="https://www.x.com/AryanSh49511166" class="fa fa-twitter"></a></li>
+                    <li><a href="https://www.linkedin.com/in/aryan-sharma-68b0b7290" class="fa fa-linkedin"></a></li>
+                </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./main.js"></script>
+        <script src="Google Sheet.js"></script>
+</body>
+
+</html>
