@@ -12,7 +12,8 @@
 }
 
 ::-webkit-scrollbar {
-    width: 0; /* This will hide the scrollbar */
+    width: 0;
+    /* This will hide the scrollbar */
 }
 
 
@@ -25,8 +26,8 @@ body {
     /* background-color: rgba(0, 0, 0, 1); */
 }
 
-body{
-    background-color:rgba(23, 23,23, 0.7);
+body {
+    background-color: rgba(23, 23, 23, 0.7);
 }
 
 h1,
@@ -40,7 +41,7 @@ p {
 
 a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 .content {
@@ -58,7 +59,7 @@ a {
 }
 
 .white {
-    color:white;
+    color: white;
 }
 
 /* HEADER */
@@ -1216,7 +1217,6 @@ footer {
     text-decoration: none;
 }
 
-#trending
-{
+#trending {
     color: transparent;
 }

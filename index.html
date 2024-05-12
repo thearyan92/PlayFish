@@ -25,8 +25,11 @@
           membership.</span
         >
         <div>
-          <input type="text" placeholder="Email Address" />
-          <button class="btn btn-red"><a href="./index2.html">Get Started</a></button>
+          <form id="emailForm">
+            <input type="text" id="emailInput" placeholder="Email Address" required>
+            <button type="submit" id="getStartedBtn" class="btn btn-red">Get Started</button>
+        </form>
+        
         </div>
       </div>
     </div>
@@ -220,5 +223,7 @@
           </div>
       </div>
   </footer>
+
+  <script src="emailvalidate.js"></script>
   </body>
 </html>
